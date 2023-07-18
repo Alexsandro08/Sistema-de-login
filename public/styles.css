@@ -1,0 +1,230 @@
+*{
+ font-family:Verdana, sans-serif;
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+ overflow: hidden;
+ 
+}
+
+body{
+    background-image: linear-gradient(to top, #189fd4, white);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#tela{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4198bb52;
+    width: 300px;
+    height: 650px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px #00000096;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+#tela > #imagem{
+    display: block;
+    background: black url(../imgs/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 255px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#hi{
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    color: #189fd4;
+}
+
+#formu{
+    display: block;
+    padding: 10px;
+    
+}
+.form-control{
+    margin-left: -2px;
+}
+
+#svg-user{
+    width: 120px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+svg{
+    color: #189fd4;
+    width: 30px;
+}
+
+.form-label{
+    font-size: 0.9em;
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
+}
+
+#card-register{
+    background-color:#189fd44c ;
+    box-shadow: 0px 0px 6px #000;
+}
+  
+
+#sen{
+    font-size: 22px;
+    color: black;
+}
+label{
+    color: black;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width:20vw;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
+.btn:hover{
+    background-color: rgba(224, 222, 222, 0.664);
+    
+}
+#btn-res{
+    color: #000;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 25px;
+}
+#btn-acc{
+    color: #0000ffbe;
+}
+#btn-acc:hover{
+    text-decoration: underline;
+}
+
+#card-register{
+    width: 97%;
+}
+
+.container > input{
+    background-color: #b7e1f196;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 7px;
+    width: 60%;
+    padding: 3px;
+}
+
+#to-submit{
+   display: block;
+   margin-left: 220px;
+   width: 30%; 
+}
+
+#root{
+    margin-left: -50px; 
+}
+
+#isenha{
+    margin-left: -7px;   
+}
+
+.container > input:focus{
+    background-color: white;
+}
+
+
+@media screen and (min-width:768px) {
+
+#tela{
+   width: 100%
+     
+}
+   
+#tela > #imagem{
+   float: left;
+   width: 55%;
+   height: 100%;
+ }
+
+#card-register{
+    width: 50%;
+ }
+       
+#formu{
+    float: right;
+    width: 45%;
+}
+.container > input{
+    background-color: #b7e1f196;
+    font-size: 1em;
+    text-align: left;
+    border-radius: 7px;
+    width: 60%;
+}
+    
+}
+
+#formu > p{
+    padding-bottom: 30px;
+}
+
+
+@media screen and (min-width:992px) {
+#tela{
+    width: 950px;
+}
+    
+ #tela > #imagem{
+    float: left;
+    width: 50%;
+}
+    
+#formu{
+    float: right;
+    width: 50%;
+}
+  
+#formu > p{
+    padding-bottom: 30px;
+}
+    
+.container > input{
+    background-color: #b7e1f196;
+    font-size: 1em;
+    text-align: left;
+    border-radius: 7px;
+    width: 60%;  
+}
+  
+#to-submit{
+    display: block;
+    margin-left: 450px;
+    width: 30%;
+    margin-top: 40px;    
+}
+
+#root{
+    margin: auto; 
+}
+    
+}
